@@ -1,0 +1,4 @@
+comment = 'Skeleton for row to column background worker'
+default_version = '1.0'
+module_pathname = '$libdir/row_to_column'
+relocatable = true
