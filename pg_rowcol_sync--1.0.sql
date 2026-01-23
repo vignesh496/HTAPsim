@@ -1,6 +1,6 @@
---------------------------------------------------------------------------------
+
 -- 1. FUNCTION: Create columnstore mirror + add rowstore to publication
---------------------------------------------------------------------------------
+
 CREATE OR REPLACE FUNCTION trg_create_columnar_mirror()
 RETURNS event_trigger
 LANGUAGE plpgsql
@@ -51,9 +51,9 @@ BEGIN
 END;
 $$;
 
---------------------------------------------------------------------------------
+
 -- 2. FUNCTION: Drop columnstore mirror + remove rowstore from publication
---------------------------------------------------------------------------------
+
 CREATE OR REPLACE FUNCTION trg_drop_columnar_mirror()
 RETURNS event_trigger
 LANGUAGE plpgsql
@@ -93,9 +93,9 @@ BEGIN
 END;
 $$;
 
---------------------------------------------------------------------------------
+
 -- 3. FUNCTION: ALTER handling (RENAME TABLE + ADD/DROP COLUMN)
---------------------------------------------------------------------------------
+
 CREATE OR REPLACE FUNCTION trg_alter_columnar_mirror()
 RETURNS event_trigger
 LANGUAGE plpgsql
@@ -128,9 +128,9 @@ BEGIN
 
         new_col_name := new_row_name || '_col';
 
-        ------------------------------------------------------------------------
+        
         -- RENAME TABLE HANDLING (ONLY if SQL says RENAME)
-        ------------------------------------------------------------------------
+
         IF current_query() ~* 'ALTER\s+TABLE\s+.*\s+RENAME\s+TO\s+' THEN
 
             old_row_name :=
@@ -159,9 +159,8 @@ BEGIN
             RETURN;
         END IF;
 
-        ------------------------------------------------------------------------
         -- COLUMN ADD / DROP HANDLING
-        ------------------------------------------------------------------------
+        
         v_sql := format(
             'ALTER TABLE %I.%I %s',
             schema_name,
@@ -185,9 +184,7 @@ BEGIN
 END;
 $$;
 
---------------------------------------------------------------------------------
 -- EVENT TRIGGERS
---------------------------------------------------------------------------------
 
 DROP EVENT TRIGGER IF EXISTS evt_columnar_mirror_on_create;
 CREATE EVENT TRIGGER evt_columnar_mirror_on_create
