@@ -10341,3 +10341,509 @@
 2026-03-17 22:24:16.292 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
 2026-03-17 22:24:16.292 IST [595235] DETAIL:  There are no running transactions.
 2026-03-17 22:24:16.292 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:17.304 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:17.304 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:17.304 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:17.305 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:17.305 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:17.305 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:18.316 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:18.316 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:18.316 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:18.317 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:18.317 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:18.317 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:19.319 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:19.328 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:19.328 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:19.328 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:19.329 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:19.329 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:19.329 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:20.331 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:20.341 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:20.341 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:20.341 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:20.341 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:20.341 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:20.341 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:21.353 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:21.353 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:21.353 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:21.354 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:21.354 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:21.354 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:22.365 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:22.365 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:22.365 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:22.366 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:22.366 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:22.366 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:23.367 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:23.377 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:23.377 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:23.377 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:23.377 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:23.377 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:23.377 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:24.389 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:24.389 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:24.389 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:24.390 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:24.390 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:24.390 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:25.401 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:25.401 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:25.401 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:25.401 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:25.401 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:25.401 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:26.413 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:26.413 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:26.413 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:26.414 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:26.414 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:26.414 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:27.426 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:27.426 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:27.426 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:27.427 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:27.427 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:27.427 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:28.429 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:28.439 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:28.439 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:28.439 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:28.439 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:28.439 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:28.439 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:29.452 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:29.452 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:29.452 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:29.453 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:29.453 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:29.453 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:30.463 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:30.463 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:30.463 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:30.464 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:30.464 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:30.464 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:31.476 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:31.476 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:31.476 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:31.476 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:31.476 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:31.476 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:32.488 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:32.488 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:32.488 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:32.489 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:32.489 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:32.489 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:33.500 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:33.500 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:33.500 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:33.501 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:33.501 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:33.501 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:34.513 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:34.513 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:34.513 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:34.514 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:34.514 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:34.514 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:35.526 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:35.526 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:35.526 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:35.527 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:35.527 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:35.527 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:36.541 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:36.541 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:36.541 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:36.542 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:36.542 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:36.542 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:37.554 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:37.554 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:37.554 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:37.555 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:37.555 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:37.555 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:38.566 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:38.566 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:38.566 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:38.567 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:38.567 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:38.567 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:39.578 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:39.578 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:39.578 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:39.579 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:39.579 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:39.579 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:40.581 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:40.590 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:40.590 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:40.590 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:40.591 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:40.591 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:40.591 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:41.593 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:41.603 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:41.603 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:41.603 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:41.604 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:41.604 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:41.604 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:42.616 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:42.616 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:42.616 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:42.617 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:42.617 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:42.617 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:43.630 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:43.630 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:43.630 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:43.631 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:43.631 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:43.631 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:44.642 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:44.642 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:44.642 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:44.643 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:44.643 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:44.643 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:45.655 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:45.655 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:45.655 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:45.656 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:45.656 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:45.656 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:46.658 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:46.670 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:46.670 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:46.670 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:46.670 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:46.670 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:46.670 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:47.682 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:47.682 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:47.682 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:47.683 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:47.683 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:47.683 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:48.696 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:48.696 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:48.696 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:48.697 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:48.697 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:48.697 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:49.698 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:49.708 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:49.708 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:49.708 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:49.709 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:49.709 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:49.709 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:50.721 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:50.721 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:50.721 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:50.722 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:50.722 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:50.722 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:51.733 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:51.733 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:51.733 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:51.734 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:51.734 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:51.734 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:52.736 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:52.747 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:52.747 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:52.747 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:52.747 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:52.747 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:52.747 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:53.749 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:53.760 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:53.760 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:53.760 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:53.761 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:53.761 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:53.761 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:54.773 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:54.773 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:54.773 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:54.773 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:54.773 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:54.773 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:55.775 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:55.785 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:55.785 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:55.785 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:55.786 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:55.786 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:55.786 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:56.798 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:56.798 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:56.798 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:56.799 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:56.799 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:56.799 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:57.801 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:57.810 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:57.810 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:57.810 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:57.811 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:57.811 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:57.811 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:58.825 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:58.825 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:58.825 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:58.826 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:58.826 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:58.826 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:59.827 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:24:59.837 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:24:59.837 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:24:59.837 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:24:59.838 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:24:59.838 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:24:59.838 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:00.852 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:00.852 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:00.852 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:00.853 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:00.853 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:00.853 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:01.865 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:01.865 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:01.865 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:01.865 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:01.865 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:01.865 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:02.877 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:02.877 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:02.877 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:02.878 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:02.878 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:02.878 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:03.889 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:03.889 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:03.889 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:03.890 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:03.890 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:03.890 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:04.903 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:04.903 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:04.903 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:04.904 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:04.904 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:04.904 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:05.914 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:05.914 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:05.914 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:05.915 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:05.915 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:05.915 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:06.928 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:06.928 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:06.928 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:06.929 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:06.929 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:06.929 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:07.930 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:07.940 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:07.940 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:07.940 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:07.941 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:07.941 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:07.941 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:08.953 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:08.953 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:08.953 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:08.953 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:08.953 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:08.953 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:09.964 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:09.964 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:09.964 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:09.965 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:09.965 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:09.965 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:10.967 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:10.979 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:10.979 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:10.979 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:10.979 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:10.979 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:10.979 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:11.991 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:11.991 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:11.991 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:11.992 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:11.992 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:11.992 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:13.004 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:13.004 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:13.004 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:13.004 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:13.004 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:13.004 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:14.018 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:14.018 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:14.018 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:14.019 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:14.019 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:14.019 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:15.032 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:15.032 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:15.032 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:15.033 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:15.033 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:15.033 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:16.044 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:16.044 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:16.044 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:16.045 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:16.045 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:16.045 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:17.057 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:17.057 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:17.057 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:17.058 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:17.058 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:17.058 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:18.059 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:18.070 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:18.070 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:18.070 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:18.070 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:18.070 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:18.070 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:19.083 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:19.083 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:19.083 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:19.084 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:19.084 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:19.084 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:20.095 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:20.095 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:20.095 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:20.096 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:20.096 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:20.096 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:21.097 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:21.107 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:21.107 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:21.107 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:21.108 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:21.108 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:21.108 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:22.119 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:22.119 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:22.119 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:22.120 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:22.120 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:22.120 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:23.121 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:23.132 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:23.132 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:23.132 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:23.133 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:23.133 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:23.133 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:24.145 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:24.145 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:24.145 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:24.145 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:24.145 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:24.145 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:25.158 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:25.158 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:25.158 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:25.159 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:25.159 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:25.159 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:26.171 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:26.171 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:26.171 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:26.172 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:26.172 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:26.172 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:27.184 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:27.184 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:27.184 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:27.184 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:27.184 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:27.184 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:28.196 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:28.196 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:28.196 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:28.196 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:28.196 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:28.196 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:29.209 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:29.209 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:29.209 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:29.209 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:29.209 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:29.209 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:30.221 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:30.221 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:30.221 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:30.222 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:30.222 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:30.222 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:31.234 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:31.234 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:31.234 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:31.235 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:31.235 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:31.235 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:32.246 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:32.246 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:32.246 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:32.247 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:32.247 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:32.247 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:33.248 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:33.258 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:33.258 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:33.258 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:33.259 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:33.259 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:33.259 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:34.271 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:34.271 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:34.271 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:34.272 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:34.272 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:34.272 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:35.274 IST [595235] LOG:  BGWorker throughput: 0.00 rows/sec (total 0 rows in 1.000 ms)
+2026-03-17 22:25:35.284 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:35.284 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:35.284 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:35.284 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:35.284 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:35.284 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:36.296 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:36.296 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:36.296 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:36.296 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:36.296 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:36.296 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:37.308 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:37.308 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:37.308 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:37.309 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:37.309 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:37.309 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:38.321 IST [595235] LOG:  starting logical decoding for slot "sample_slot2"
+2026-03-17 22:25:38.321 IST [595235] DETAIL:  Streaming transactions committing after 0/134A0498, reading WAL from 0/134A0460.
+2026-03-17 22:25:38.321 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
+2026-03-17 22:25:38.322 IST [595235] LOG:  logical decoding found consistent point at 0/134A0460
+2026-03-17 22:25:38.322 IST [595235] DETAIL:  There are no running transactions.
+2026-03-17 22:25:38.322 IST [595235] CONTEXT:  SQL statement "SELECT data FROM pg_logical_slot_get_binary_changes('sample_slot2', NULL, NULL, 'proto_version','1', 'publication_names','htap_pub')"
