@@ -1,53 +1,8 @@
--- create a publication
+-- create publication
 
-DO $$ 
-DECLARE
-    pub_name TEXT := 'htap_pub';
-    pub_exists BOOLEAN;
-BEGIN
-    -- 1. Check if the publication already exists
-    SELECT EXISTS (
-        SELECT 1 
-        FROM pg_publication 
-        WHERE pubname = pub_name
-    ) INTO pub_exists;
+DROP PUBLICATION IF EXISTS htap_pub;
+create publication htap_pub;
 
-    -- 2. If it exists, drop it first
-    IF pub_exists THEN
-        EXECUTE format('DROP PUBLICATION %I', pub_name);
-        RAISE NOTICE 'Existing publication "%" dropped.', pub_name;
-    END IF;
-
-    -- 3. Create the new publication
-    -- Using FOR ALL TABLES or specify tables as needed
-    EXECUTE format('CREATE PUBLICATION %I', pub_name);
-    RAISE NOTICE 'Publication "%" created', pub_name;
-
-END $$;
-
--- create a logical replication slot
-
-DO $$ 
-DECLARE
-    slot_name_val TEXT := 'sample_slot2';
-    slot_exists   BOOLEAN;
-BEGIN
-    -- 1. Check if the slot already exists in the system view
-    SELECT EXISTS (
-        SELECT 1 
-        FROM pg_replication_slots 
-        WHERE slot_name = slot_name_val
-    ) INTO slot_exists;
-
-    -- 2. Conditional logic
-    IF NOT slot_exists THEN
-        -- We use PERFORM for functions that return a result we want to discard
-        PERFORM pg_create_logical_replication_slot(slot_name_val, 'pgoutput');
-        RAISE NOTICE 'Replication slot "%" created.', slot_name_val;
-    ELSE
-        RAISE NOTICE 'Replication slot "%" already exists. No action taken.', slot_name_val;
-    END IF;
-END $$;
 
 -- DDL Queue table to track changes for the worker to process
 
@@ -59,6 +14,10 @@ CREATE TABLE IF NOT EXISTS ddl_queue (
 );
 
 alter publication htap_pub add table ddl_queue;
+
+
+
+-- alter table add column name, with col. type
 
 CREATE OR REPLACE PROCEDURE htap_add(
     tbl_name TEXT,
@@ -106,6 +65,7 @@ EXCEPTION
 END;
 $$;
 
+-- alter table drop column 
 
 CREATE OR REPLACE PROCEDURE htap_drop_col(
     tbl_name TEXT,
@@ -139,6 +99,7 @@ EXCEPTION
 END;
 $$;
 
+-- alter table rename from_table to to_table name
 
 CREATE OR REPLACE PROCEDURE htap_rename_table(
     old_name TEXT,
@@ -172,6 +133,7 @@ EXCEPTION
 END;
 $$;
 
+-- alter table rename column
 
 CREATE OR REPLACE PROCEDURE htap_rename_column(
     tbl_name TEXT,
@@ -237,6 +199,7 @@ EXCEPTION
 END;
 $$;
 
+-- alter table column datatype change
 
 CREATE OR REPLACE PROCEDURE htap_change_type(
     tbl_name TEXT,
@@ -306,6 +269,7 @@ EXCEPTION
 END;
 $$;
 
+-- truncate table 
 
 CREATE OR REPLACE PROCEDURE htap_truncate(tbl_name TEXT)
 LANGUAGE plpgsql AS $$
@@ -334,6 +298,7 @@ EXCEPTION
 END;
 $$;
 
+-- drop table
 
 CREATE OR REPLACE PROCEDURE htap_drop_table(tbl_name TEXT)
 LANGUAGE plpgsql AS $$
@@ -362,13 +327,14 @@ EXCEPTION
 END;
 $$;
 
+-- create table with add publication
 
 CREATE OR REPLACE PROCEDURE htap_create(tbl_name TEXT, columns_definition TEXT)
 LANGUAGE plpgsql AS $$
 BEGIN
     -- 1. Create the Rowstore Table (Standard Heap)
     EXECUTE format('CREATE TABLE %I (%s)', tbl_name, columns_definition);
-
+    EXECUTE format('Alter publication htap_pub add table %I', tbl_name);
     -- 2. Create the Columnar Mirror
     -- Note: We append 'USING columnar' (or your specific engine syntax)
     EXECUTE format(

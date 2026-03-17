@@ -19,6 +19,13 @@
 #include "utils/hsearch.h"
 #include "nodes/pg_list.h"
 
+#include <stdio.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <errno.h>
+
+#define R2C_TMP_DIR "/tmp/row_to_column"
+
 
 PG_MODULE_MAGIC;
 
@@ -50,8 +57,16 @@ static HTAB *relmap = NULL;
 typedef struct TxnBuf
 {
     List *sqls;
+    List *batches; /* list of BatchEntry* */
     struct TxnBuf *next;
 } TxnBuf;
+
+typedef struct BatchEntry
+{
+    char *table; /* target table name, e.g., relname_col */
+    char *path;  /* filesystem path to CSV file */
+    int nrows;
+} BatchEntry;
 
 static TxnBuf *txn_head = NULL;
 static TxnBuf *txn_tail = NULL;
@@ -61,6 +76,7 @@ static TxnBuf *txn_create(void)
 {
     TxnBuf *txn = palloc0(sizeof(TxnBuf));
     txn->sqls = NIL;
+    txn->batches = NIL;
     txn->next = NULL;
     return txn;
 }
@@ -88,6 +104,72 @@ static void txn_append_sql(TxnBuf *txn, const char *sql)
     txn->sqls = lappend(txn->sqls, pstrdup(sql));
 }
 
+/* Ensure temporary directory exists (ignore errors if it already exists) */
+static void
+ensure_tmp_dir(void)
+{
+    struct stat st;
+    if (stat(R2C_TMP_DIR, &st) == 0)
+    {
+        if ((st.st_mode & S_IFDIR) != S_IFDIR)
+            elog(WARNING, "%s exists and is not a directory", R2C_TMP_DIR);
+        return;
+    }
+
+    if (mkdir(R2C_TMP_DIR, 0700) != 0 && errno != EEXIST)
+        elog(WARNING, "could not create tmp dir %s: %m", R2C_TMP_DIR);
+}
+
+/* Append a single value-tuple to a per-relation CSV file and register the batch */
+static void
+txn_append_values(TxnBuf *txn, Oid relid, const char *relname, const char *target_table, const char *tuple)
+{
+    ListCell *lc;
+    BatchEntry *be = NULL;
+    char path[PATH_MAX];
+
+    if (!txn || !relname || !target_table || !tuple)
+        return;
+
+    ensure_tmp_dir();
+
+    snprintf(path, sizeof(path), "%s/%u_%s.csv", R2C_TMP_DIR, (unsigned)relid, relname);
+
+    /* find existing batch entry */
+    foreach (lc, txn->batches)
+    {
+        BatchEntry *curr = (BatchEntry *) lfirst(lc);
+        if (strcmp(curr->path, path) == 0)
+        {
+            be = curr;
+            break;
+        }
+    }
+
+    if (!be)
+    {
+        be = palloc0(sizeof(BatchEntry));
+        be->table = pstrdup(target_table);
+        be->path = pstrdup(path);
+        be->nrows = 0;
+        txn->batches = lappend(txn->batches, be);
+    }
+
+    /* append tuple as one CSV line */
+    FILE *f = fopen(path, "a");
+    if (!f)
+    {
+        elog(WARNING, "could not open CSV file %s for append: %m", path);
+        return;
+    }
+    /* tuple is already formatted, write and newline */
+    if (fputs(tuple, f) == EOF || fputc('\n', f) == EOF)
+        elog(WARNING, "failed to write to CSV file %s: %m", path);
+    fclose(f);
+
+    be->nrows++;
+}
+
 /* Execute a single transaction buffer */
 static int
 txn_process_buffer(TxnBuf *txn)
@@ -98,16 +180,48 @@ txn_process_buffer(TxnBuf *txn)
     if (!txn)
         return 0;
 
+    /* First, perform COPY for each batch (per-relation CSV file) */
+    foreach (lc, txn->batches)
+    {
+        BatchEntry *be = (BatchEntry *) lfirst(lc);
+        StringInfoData sql;
+        initStringInfo(&sql);
+
+        appendStringInfo(&sql, "COPY %s FROM '%s' WITH (FORMAT csv)", be->table, be->path);
+
+        int rc = SPI_execute(sql.data, false, 0);
+        if (rc < 0)
+            elog(LOG, "SPI_execute COPY failed: %s", sql.data);
+        else
+            rows += SPI_processed;
+
+        /* truncate the CSV file after successful COPY (best-effort) */
+        FILE *f = fopen(be->path, "w");
+        if (f)
+            fclose(f);
+
+        pfree(sql.data);
+    }
+
+    /* Then execute any DDL/other SQLs (ddl_queue entries), one by one */
     foreach (lc, txn->sqls)
     {
         char *sql = lfirst(lc);
-
         int rc = SPI_execute(sql, false, 0);
         if (rc < 0)
             elog(LOG, "SPI_execute failed: %s", sql);
-
         rows += SPI_processed;
     }
+
+    /* cleanup batches */
+    foreach (lc, txn->batches)
+    {
+        BatchEntry *be = (BatchEntry *) lfirst(lc);
+        pfree(be->table);
+        pfree(be->path);
+        pfree(be);
+    }
+    list_free(txn->batches);
 
     list_free_deep(txn->sqls);
     pfree(txn);
